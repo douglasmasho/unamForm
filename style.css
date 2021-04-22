@@ -1,0 +1,146 @@
+*,
+*::after,
+*::before{
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+
+html{
+    scroll-behavior: smooth;
+      font-size: 62.5%;
+      font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    padding: 3rem;
+}
+
+.header{
+    display: flex;
+    position: relative;
+}
+
+#letter{
+    --bg-color: #ff0000;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--bg-color);
+    padding: 30px 20px;
+    font-size: 30px;
+}
+
+/* utility classes */
+
+.u-margin-right{
+    margin-right: 5px;
+}
+
+.u-margin-bottom{
+    margin-bottom: 5px;
+}
+
+.u-margin-bottom-big{
+    margin-bottom: 15px;
+}
+
+
+/* //// */
+
+.header-2{
+    --bg-color: #ff0000;
+    background-color: var(--bg-color);
+    width: 100%;
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    padding: 30px;
+    color: white;
+    font-size: 14px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* /////////////// */
+.pandlcontain{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 40%;
+    justify-content: flex-end;
+}
+
+.rect{
+    height: 200px;
+}
+
+/* .rect:not(:last-child){
+    margin-right: 20px;
+} */
+
+.logodiv{
+    padding: 13px;
+    background-color: red;
+}
+
+.passportdiv{
+    background-color: rgb(214, 214, 214);
+}
+
+.logodiv,
+.passportdiv{
+    padding: 20px; 
+    text-align: center;
+    border: white 2px solid;
+}
+
+.passportdiv h3{
+    font-size: 15px;
+}
+
+.logo{
+    width: 70%;
+}
+
+.outer-border{
+    border: 2px solid red;
+    padding: 3px;
+    width: 40%;
+}
+
+.outer-border:not(:last-child){
+    margin-right: 20px;
+}
+
+.input-digit{
+    width: 15px;
+    padding: 5px;
+}
+
+.input-group{
+    width: 55%;
+    text-align: right;
+    padding: 1rem;
+}
+
+.input-group h3{
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+.normal-text{
+    font-size: 16px;
+}
+
+.smaller-text{
+    font-size: 12px;
+}
+
+
+/* //////////// */

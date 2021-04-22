@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unam Form</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        #letter{
+            --bg-color: #ff0000;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: var(--bg-color);
+            padding: 30px 20px;
+            font-size: 30px;
+        }
+        *,
+        *::after,
+        *::before{
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+        }
+
+
+        html{
+            scroll-behavior: smooth;
+            font-size: 62.5%;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        body{
+            padding: 3rem;
+        }
+
+        .header{
+            display: flex;
+            position: relative;
+        }
+
+        #letter{
+            --bg-color: #ff0000;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: var(--bg-color);
+            padding: 30px 20px;
+            font-size: 30px;
+        }
+
+        /* utility classes */
+
+        .u-margin-right{
+            margin-right: 5px;
+        }
+
+        .u-margin-bottom{
+            margin-bottom: 5px;
+        }
+
+        .u-margin-bottom-big{
+            margin-bottom: 15px;
+        }
+
+
+        /* //// */
+
+        .header-2{
+            --bg-color: #ff0000;
+            background-color: var(--bg-color);
+            width: 100%;
+            /* justify-content: center; */
+            display: flex;
+            flex-direction: row;
+            align-items: center;  
+            padding: 30px;
+            color: white;
+            font-size: 14px;
+        }
+
+        .row{
+            display: flex;
+            flex-direction: row;
+        }
+
+
+        /* /////////////// */
+        .pandlcontain{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 40%;
+            justify-content: flex-end;
+        }
+
+        .rect{
+            height: 200px;
+        }
+
+        /* .rect:not(:last-child){
+            margin-right: 20px;
+        } */
+
+        .logodiv{
+            padding: 13px;
+            background-color: red;
+        }
+
+        .passportdiv{
+            background-color: rgb(214, 214, 214);
+        }
+
+        .logodiv,
+        .passportdiv{
+            padding: 20px; 
+            text-align: center;
+            border: white 2px solid;
+        }
+
+        .passportdiv h3{
+            font-size: 15px;
+        }
+
+        .logo{
+            width: 70%;
+        }
+
+        .outer-border{
+            border: 2px solid red;
+            padding: 3px;
+            width: 40%;
+        }
+
+        .outer-border:not(:last-child){
+            margin-right: 20px;
+        }
+
+        .input-digit{
+            width: 15px;
+            padding: 5px;
+        }
+
+        .input-group{
+            width: 55%;
+            text-align: right;
+            padding: 1rem;
+        }
+
+        .input-group h3{
+            display: inline-block;
+            font-size: 16px;
+
+        }
+
+        .normal-text{
+            font-size: 16px;
+        }
+
+        .smaller-text{
+            font-size: 12px;
+        }
+
+
+/* //////////// */
+    </style>
+
+</head>
+<body>
+    <form action="">
+        <div class="header">
+            <div id="letter" class="u-margin-right"><h1>A</h1></div>  
+            <div class="header-2"><h1>FULL & PART-TIME STUDIES</h1></div> 
+                <div class="pandlcontain row">
+                    <div class="outer-border">
+                        <div class="passportdiv rect">
+                            <h3 class="u-margin-bottom-big">PASSPORT PHOTO
+                                OF APPLICANT
+                                (Compulsory)</h3>
+                                <p class="normal-text">Please attach 
+                                    a recent 
+                                    passport 
+                                    photograph 
+                                    of yourself</p>
+                        </div>
+                    </div>
+                    <div class="outer-border">
+                        <div class="logodiv rect"><img src="./img/unamlogo.png" alt="" class="logo"></div>         
+                    </div>
+                </div>
+        </div>
+        <div style="background-color: rgb(192, 192, 192); color: white;" class="input-group">
+            <h3 style="text-transform: uppercase;">Student Number</h3>
+            <!-- the step attribute s -->
+            <input type="text" maxlength="1"  max="9" min="0" class="input-digit"/>
+            <input type="text" maxlength="1"  max="9" min="0" class="input-digit"/>
+            <input type="text" maxlength="1"  max="9" min="0" class="input-digit"/>
+            <input type="text" maxlength="1"  max="9" min="0" class="input-digit"/>
+            <input type="text" maxlength="1"  max="9" min="0" class="input-digit"/>
+            <input type="text" maxlength="1"  max="9" min="0" class="input-digit"/>
+            <input type="text" maxlength="1"  max="9" min="0" class="input-digit"/>
+            <input type="text" maxlength="1"  max="9" min="0" class="input-digit"/>
+            <input type="text" maxlength="1"  max="9" min="0" class="input-digit"/>  
+        </div>
+        <div class="input-group">
+            <h3 style="text-transform: capitalize;">Academic year applied for:</h3>
+            <input type="text" maxlength="1"  max="9" min="0" class="input-digit"/>
+            <input type="text" maxlength="1"  max="9" min="0" class="input-digit"/>
+            <input type="text" maxlength="1"  max="9" min="0" class="input-digit"/>
+            <input type="text" maxlength="1"  max="9" min="0" class="input-digit"/>
+        </div>
+        <div class="input-group">
+            <p style="color: red;" class="normal-text"><strong>The closing date for applications: 04 September 2020</strong><br>
+                NO LATE APPLICATIONS WILL BE CONSIDERED.</p>
+        </div>
+        <p style="background-color: rgb(192, 192, 192); text-align: center;" class="smaller-text u-margin-bottom">This application is not binding on either the applicant or the University of Namibia. All information will be treated as confidential. An application fee as specified below must accompany this application</p>
+        <p style="background-color: rgb(51, 51, 51); text-align: center; color: white" class="normal-text u-margin-bottom">
+            <strong>Instructions:</strong> Use block letters to complete this form where space is provided or place an ‘X’ in the correct square. <br>
+            <strong>Incomplete applications will not be accepted.</strong> All certified documents will be filed - no copies will be returned to applicants.
+        </p>
+
+    </form>
+</body>
+</html>
