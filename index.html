@@ -164,6 +164,40 @@
             font-size: 12px;
         }
 
+        .red-text{
+            color: red
+        }
+
+        .section-header{
+            border: 2px red solid;
+            padding: 0.5rem 0.3rem;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        table, tr, td{
+            border: black solid 1px
+        }
+        
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .table-data{
+            padding: 0.5rem;
+        }
+
+        .input-text{
+            padding: 1rem;
+            width: 90%;
+            border: none;
+        }
+
+        /* .table-row{
+        } */
+
+
 
 /* //////////// */
     </style>
@@ -221,6 +255,35 @@
             <strong>Instructions:</strong> Use block letters to complete this form where space is provided or place an ‘X’ in the correct square. <br>
             <strong>Incomplete applications will not be accepted.</strong> All certified documents will be filed - no copies will be returned to applicants.
         </p>
+
+        <!-- section 6 -->
+
+        <section class="section" id="section-6">
+            <div class="section-header">
+                <h3 class="red-text">SECTION 6: EMPLOYMENT PARTICULARS (only if applicant is in full-time employment)</h3>
+            </div>
+            <table>
+                <tr class="table-row">
+                    <td class="table-data"><p class="normal-text">Name of Employer:</p></td>
+                    <td class="table-data"><input type="text" class="input-text"></td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-data"><p class="normal-text">Your Occupation:</p></td>
+                    <td class="table-data"><input type="text" class="input-text"></td>
+                </tr>                <tr class="table-row">
+                    <td class="table-data"><p class="normal-text">Years of experience:</p></td>
+                    <td class="table-data"><input type="number" class="input-text"></td>
+                </tr>                <tr class="table-row">
+                    <td class="table-data"><p class="normal-text">Employer's postal address:</p></td>
+                    <td class="table-data"><input type="text" class="input-text"></td>
+                </tr>                <tr class="table-row">
+                    <td class="table-data"><p class="normal-text">Employer's Telephone Number:</p></td>
+                    <td class="table-data"><input type="text" class="input-text"></td>
+                </tr>
+            </table>
+
+        </section>
+
 
     </form>
 </body>
