@@ -1,16 +1,23 @@
+#letter{
+    --bg-color: #ff0000;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--bg-color);
+    padding: 30px 20px;
+    font-size: 30px;
+}
 *,
 *::after,
 *::before{
-   margin: 0;
-   padding: 0;
-   box-sizing: inherit;
+margin: 0;
+padding: 0;
+box-sizing: inherit;
 }
 
 
 html{
     scroll-behavior: smooth;
-      font-size: 62.5%;
-      font-family: 'DM Sans', sans-serif;
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
 }
 
 body{
@@ -37,11 +44,23 @@ body{
 }
 
 .u-margin-bottom{
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+}
+
+.u-margin-bottom-huge{
+    margin-bottom: 390px;
 }
 
 .u-margin-bottom-big{
     margin-bottom: 15px;
+}
+
+.u-margin-top{
+    margin-top: 8px;
+}
+
+.u-margin-top-big{
+    margin-top: 25px;
 }
 
 
@@ -142,5 +161,78 @@ body{
     font-size: 12px;
 }
 
+.red-text{
+    color: red
+}
 
+.light-text{
+    font-weight: lighter;
+}
+.section-header{
+    border: 2px red solid;
+    padding: 0.5rem 0.3rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.section-header-no-border{
+    padding: 0.5rem 0.3rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;    
+}
+
+table, tr, td, th{
+    border: black solid 1px
+}
+td{
+    font-size: 16px;
+}
+td,th{
+    padding: 5px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th{
+    text-align: left;
+    font-size: 16px;
+}
+
+.table-data{
+    padding: 0.5rem;
+}
+
+.input-number,
+.input-text{ 
+    padding: 1rem;
+    width: 90%;
+    /* border: none; */
+}
+
+/* .table-row{
+} */
+
+.bigger-text{
+    font-size: 20px;
+}
+
+section{
+    margin-bottom: 4rem !important;
+}
 /* //////////// */
+/* stamp square */
+
+.date-stamp{
+    border: black 3px solid;
+    border-radius: 20px;
+    height: 20rem;
+}
+
+.center-hrz{
+    display: flex;
+    justify-content: center;
+}
