@@ -58,12 +58,20 @@
             margin-bottom: 8px;
         }
 
+        .u-margin-bottom-huge{
+            margin-bottom: 390px;
+        }
+
         .u-margin-bottom-big{
             margin-bottom: 15px;
         }
 
         .u-margin-top{
             margin-top: 8px;
+        }
+
+        .u-margin-top-big{
+            margin-top: 25px;
         }
 
 
@@ -168,11 +176,15 @@
             color: red
         }
 
+        .light-text{
+            font-weight: lighter;
+        }
         .section-header{
             border: 2px red solid;
             padding: 0.5rem 0.3rem;
             font-size: 1.4rem;
             margin-bottom: 0.5rem;
+            text-transform: uppercase;
         }
 
         .section-header-no-border{
@@ -181,8 +193,14 @@
             margin-bottom: 0.5rem;    
         }
 
-        table, tr, td{
+        table, tr, td, th{
             border: black solid 1px
+        }
+        td{
+            font-size: 16px;
+        }
+        td,th{
+            padding: 5px;
         }
         
         table{
@@ -190,15 +208,20 @@
             width: 100%;
         }
 
+        th{
+            text-align: left;
+            font-size: 16px;
+        }
+
         .table-data{
             padding: 0.5rem;
         }
 
         .input-number,
-        .input-text{
+        .input-text{ 
             padding: 1rem;
             width: 90%;
-            border: none;
+            /* border: none; */
         }
 
         /* .table-row{
@@ -218,6 +241,11 @@
             border: black 3px solid;
             border-radius: 20px;
             height: 20rem;
+        }
+
+        .center-hrz{
+            display: flex;
+            justify-content: center;
         }
 
 
@@ -278,6 +306,48 @@
             <strong>Instructions:</strong> Use block letters to complete this form where space is provided or place an ‘X’ in the correct square. <br>
             <strong>Incomplete applications will not be accepted.</strong> All certified documents will be filed - no copies will be returned to applicants.
         </p>
+         
+        <!-- section 2 -->
+        <section>
+            <div class="section-header">
+                <h3 class="red-text">SECTION 2: APPLICANT'S PARTICULARS</h3>
+            </div>
+            <br>
+            <table>
+                <tr>
+                    <th>Title:</th>
+                    <th>Mr</th>
+                    <td>
+                        <input type="radio" name="title">
+                    </td>
+                    <th>Ms</th>
+                    <td>
+                        <input type="radio"  name="title">
+                    </td>
+                    <th>Other(Specify)</th>
+                    <td>
+                        <input type="text" class="input-text" placeholder="Enter data">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Surname:</th>
+                    <td colspan="6">
+                        <input type="text"  class="input-text" placeholder="Enter data">
+                    </td>
+                </tr>
+                    <tr>
+                        <th>First Name in full:</th>
+                        <td colspan="3" width="50%">
+                            <input type="text"  class="input-text" placeholder="Enter data" width>
+                        </td>
+                        <th width=>Initials:</th>
+                        <td width="5px" colspan="2">
+                            <input type="text"  class="input-text" placeholder="Enter data">
+                        </td>
+                    </tr>
+            </table>
+        </section>
+
 
         <!-- section 6 -->
 
@@ -287,21 +357,21 @@
             </div>
             <table>
                 <tr class="table-row">
-                    <td class="table-data"><p class="normal-text">Name of Employer:</p></td>
-                    <td class="table-data"><input type="text" class="input-text"></td>
+                    <th class="table-data"><p class="normal-text">Name of Employer:</p></th>
+                    <td class="table-data"><input type="text" class="input-text" placeholder="Enter data"></td>
                 </tr>
                 <tr class="table-row">
-                    <td class="table-data"><p class="normal-text">Your Occupation:</p></td>
-                    <td class="table-data"><input type="text" class="input-text"></td>
+                    <th class="table-data"><p class="normal-text">Your Occupation:</p></th>
+                    <td class="table-data"><input type="text" class="input-text" placeholder="Enter data"></td>
                 </tr>                <tr class="table-row">
-                    <td class="table-data"><p class="normal-text">Years of experience:</p></td>
-                    <td class="table-data"><input type="number" class="input-text"></td>
+                    <th class="table-data"><p class="normal-text">Years of experience:</p></th>
+                    <td class="table-data"><input type="number" class="input-text" placeholder="Enter data"></td>
                 </tr>                <tr class="table-row">
-                    <td class="table-data"><p class="normal-text">Employer's postal address:</p></td>
-                    <td class="table-data"><input type="text" class="input-text"></td>
+                    <th class="table-data"><p class="normal-text">Employer's postal address:</p></th>
+                    <td class="table-data"><input type="text" class="input-text" placeholder="Enter data"></td>
                 </tr>                <tr class="table-row">
-                    <td class="table-data"><p class="normal-text">Employer's Telephone Number:</p></td>
-                    <td class="table-data"><input type="text" class="input-text"></td>
+                    <th class="table-data"><p class="normal-text">Employer's Telephone Number:</p></th>
+                    <td class="table-data"><input type="text" class="input-text" placeholder="Enter data"></td>
                 </tr>
             </table>
         </section>
@@ -313,34 +383,246 @@
 
             <table>
                 <tr>
-                    <td class="table-data"><p class="normal-text">Last secondary school attended:</p></td>
-                    <td><input type="text" class="input-text"></td>
+                    <th class="table-data"><p class="normal-text">Last secondary school attended:</p></th>
+                    <td><input type="text" class="input-text" placeholder="Enter data"></td>
                 </tr>
                 <tr>
-                    <td class="table-data"><p class="normal-text">Address of school:</p></td>
-                    <td><input type="text" class="input-text"></td>
+                    <th class="table-data"><p class="normal-text">Address of school:</p></th>
+                    <td><input type="text" class="input-text" placeholder="Enter data"></td>
                 </tr>
                 <tr>
-                    <td class="table-data"><p class="normal-text">Highest grade passed:</p></td>
+                    <th class="table-data"><p class="normal-text">Highest grade passed:</p></th>
                     <td><input type="number" class="input-number"></td>
                 </tr>
                 <tr>
-                    <td class="table-data"><p class="normal-text">Current grade (if applicable):</p></td>
+                    <th class="table-data"><p class="normal-text">Current grade (if applicable):</p></th>
                     <td><input type="number" class="input-number"></td>
                 </tr>
                 <tr>
-                    <td class="table-data"><p class="normal-text">Date of examination:</p></td>
-                    <td><input type="date" class="input-text"></td>
+                    <th class="table-data"><p class="normal-text">Date of examination:</p></th>
+                    <td><input type="date" class="input-text" placeholder="Enter data"></td>
                 </tr>
                 <tr>
-                    <td class="table-data"><p class="normal-text">Examination number:</p></td>
+                    <th class="table-data"><p class="normal-text">Examination number:</p></th>
                     <td><input type="number" class="input-number"></td>
                 </tr>
                 <tr>
-                    <td class="table-data"><p class="normal-text">Examination body:</p></td>
-                    <td><input type="text" class="input-text"></td>
+                    <th class="table-data"><p class="normal-text">Examination body:</p></th>
+                    <td><input type="text" class="input-text" placeholder="Enter data"></td>
                 </tr>
             </table>
+
+            <div style="background-color: rgb(192, 192, 192); padding: 1rem;" class="u-margin-top-big">
+                <p class="normal-text"><strong><em>Note: Current Grade 12 Scholars in Namibian secondary schools: Kindly submit the latest available School Rapport. 
+                    Note: A certified copy of your School Leaving Certificate should accompany this application. Please furnish your NAMIBIAN School 
+                    Leaving Certificate (Grade 12) if you attended a Secondary School in Namibia.</em></strong></p>
+            </div>
+
+        
+                <br>
+                <table border= "1"  width= 100% cellpadding= "4" cellspacing= "0">
+                <tr>
+                <th> Subject [Best 5 Subjects, including English and Faculty compulsory subjects where applicable]</th>
+                <th title="See table below"> Level </th>
+                <th> Symbol </th>
+                </tr>
+                <tr>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- nest the input here -->
+                <input type="text" class="input-text" placeholder="Enter data" width="50%">
+                <!-- table data -->
+                <td class="table-data">
+                <! -- select the input -->
+                <select>
+                <option></option>
+                <option> HI </option>
+                <option> OL </option>
+                <option> AL </option>
+                <option> IG </option>
+                </select>
+                </td>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- select the input -->
+                <select>
+                <option></option>
+                <option> 1 </option>
+                <option> 2 </option>
+                <option> 3 </option>
+                <option> 4 </option>
+                <option> A </option>
+                <option> B </option>
+                <option> C </option>
+                <option> D </option>
+                <option> E </option>
+                <option> F </option>
+                </select>
+                </tr>
+                <tr>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- nest the input here -->
+                <input type="text" class="input-text" placeholder="Enter data" width="70%">
+                <!-- table data -->
+                <td class="table-data">
+                <! -- select the input -->
+                <select>
+                <option></option>   
+                <option> HI </option>
+                <option> OL </option>
+                <option> AL </option>
+                <option> IG </option>
+                </select>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- select the input -->
+                <select>
+                <option></option>
+                <option> 1 </option>
+                <option> 2 </option>
+                <option> 3 </option>
+                <option> 4 </option>
+                <option> A </option>
+                <option> B </option>
+                <option> C </option>
+                <option> D </option>
+                <option> E </option>
+                <option> F </option>
+                </select>
+                </tr>
+                <tr>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- nest the input here -->
+                <input type="text" class="input-text" placeholder="Enter data" width="70%">
+                <!-- table data -->
+                <td class="table-data">
+                <! -- select the input -->
+                <select>
+                <option></option>
+                <option> HI </option>
+                <option> OL </option>
+                <option> AL </option>
+                <option> IG </option>
+                </select>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- select the input -->
+                <select>
+                <option></option>
+                <option> 1 </option>
+                <option> 2 </option>
+                <option> 3 </option>
+                <option> 4 </option>
+                <option> A </option>
+                <option> B </option>
+                <option> C </option>
+                <option> D </option>
+                <option> E </option>
+                <option> F </option>
+                </select>
+                </tr>
+                <tr>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- nest the input here -->
+                <input border="0" type="text" class="input-text" placeholder="Enter data" width="70%">
+                <!-- table data -->
+                <td class="table-data">
+                <! -- select the input -->
+                <select>
+                <option></option>
+                <option> HI </option>
+                <option> OL </option>
+                <option> AL </option>
+                <option> IG </option>
+                </select>
+                <!-- table data -->
+                <td class="table-data">
+                <select>
+                <option></option>
+                <option> 1 </option>
+                <option> 2 </option>
+                <option> 3 </option>
+                <option> 4 </option>
+                <option> A </option>
+                <option> B </option>
+                <option> C </option>
+                <option> D </option>
+                <option> E </option>
+                <option> F </option>
+                </select>
+                </tr>
+                <tr>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- nest the input here -->
+                <input type="text" class="input-text" placeholder="Enter data" width="70%">
+                <!-- table data -->
+                <td class="table-data">
+                <! -- select the input -->
+                <select>
+                <option></option>
+                <option> HI </option>
+                <option> OL </option>
+                <option> AL </option>
+                <option> IG </option>
+                </select>
+                <!-- table data -->
+                <td class="table-data">
+                <select>
+                <option></option>
+                <option> 1 </option>
+                <option> 2 </option>
+                <option> 3 </option>
+                <option> 4 </option>
+                <option> A </option>
+                <option> B </option>
+                <option> C </option>
+                <option> D </option>
+                <option> E </option>
+                <option> F </option>
+                </select>
+                </tr>
+                </table>
+                <br>
+                <div class="center-hrz u-margin-top-big u-margin-bottom-huge">
+                    <table border="1" width="40%" height="20%" cellpadding= "4" cellspacing= "0" align="center" style="width: 50%">
+                        <tr>
+                        <th align="center" colspan="4" style="text-align: center;">Level</th>
+                        </tr>
+                        <tr>
+                        <td> ON = NSSC </td>
+                        <td> IG = IGCSE </td>
+                        <td> AL = A LEVEL </td>
+                        <td> HG = HIGHER GRADE </td>
+                        </tr>
+                        <tr>
+                        <td> NH = NSSC </td>
+                        <td> HI = HIGCSE </td>
+                        <td> OL = O-LEVEL </td>
+                        <td> SG = STANDARD GRADE </td>
+                        </tr>
+                        <td> </td>
+                        <td> </td>
+                        <td>  </td>
+                        <td> LG = LOWER GRADE </td>
+                        </tr>
+                        </table>
+
+                </div>
+                <div class="center-hrz">
+                <p class="normal-text red-text" style="padding: 10px; background-color: rgb(230, 230, 230); text-align: center; width: 90%"><em><strong>International students should note that only original School Leaving Certificates or an Advice of Results with a confirmation 
+                    letter from the relevant Examination Council / Authority stating that certificates will be issued during the first year of 
+                    registration, will be accepted. No mock results or School Rapports will be considered.
+                    <br>
+                    <br>         
+                    An NQA evaluation should accompany this application form, for any qualifications not obtained at UNAM. 
+                    Kindly note that an NQA evaluation takes a minimum of 30 days.<strong></em></p>
+                </div>
+            
+        
         </section>
 
 
@@ -349,30 +631,33 @@
                 <h3 class="red-text">SECTION 10 ACHIEVEMENTS:</h3> 
             </div>
             <p class="bigger-text u-margin-bottom u-margin-top" style="border: black 3px solid"><strong>A. SPORT & CULTURE</strong></p>
-                <small class="smaller-text">Specify achievements, leadership positions and also the level(s) at which you have participated (school, club, regional, national):</small>   
+                <small class="normal-text light-text">Specify achievements, leadership positions and also the level(s) at which you have participated (school, club, regional, national):</small>   
                 <table>
                     <tr>
                        <th class="normal-text">Activity/Position</th>
                        <th class="normal-text">Level/Activity</th>   
                     </tr> 
                     <tr>
-                        <td><input type="text" class="input-text"></td>
-                        <td><input type="text" class="input-text"></td>
+                        <td><input type="text" class="input-text" placeholder="Enter data"></td>
+                        <td><input type="text" class="input-text" placeholder="Enter data"></td>
                     </tr>     
                     <tr>
-                        <td><input type="text" class="input-text"></td>
-                        <td><input type="text" class="input-text"></td>
+                        <td><input type="text" class="input-text" placeholder="Enter data"></td>
+                        <td><input type="text" class="input-text" placeholder="Enter data"></td>
                     </tr>   
                     <tr>
-                        <td><input type="text" class="input-text"></td>
-                        <td><input type="text" class="input-text"></td>
+                        <td><input type="text" class="input-text" placeholder="Enter data"></td>
+                        <td><input type="text" class="input-text" placeholder="Enter data"></td>
                     </tr>   
                 </table>
                 <br>
-                <p2>DECLARATION</p2>
+                <div class="section-header">
+                    <h3 class="red-text">Decleration</h3>
+                </div>
                 <br>
-                <small class="smaller-text">I hereby declare that all the particulars given in the application form are true and corret i furthe that my enrolment as a student at the
-                     University of Namibia(UNAM) shall be subject to the terms and condition in the agreement, that I shall complet, sign and submit at registration</small>
+                <p class="normal-text light-text">I hereby declare that all the particulars given in this application form are true and correct. I further declare that my enrolment as a student at the 
+                    University of Namibia (UNAM) shall be subject to the terms and conditions contained in the agreement, which I shall complete, sign and submit 
+                    at registration. </p>
         </section>
 
 
@@ -391,10 +676,10 @@
                 <div class="date-stamp row" style="width: 35%; justify-content: center; align-items: center;" >
                     <p style="color: gray" class="normal-text"><strong>OFFICIAL DATE STAMP</strong></p>
                 </div>
-
             </div>
-
         </section>
+
+
     </form>
 </body>
 </html>
