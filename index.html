@@ -24,6 +24,13 @@
         box-sizing: inherit;
         }
 
+        .requirements-list{
+            list-style: none;
+        }
+
+        .requirements-list li:not(:last-child){
+            margin-bottom: 10px;
+        }
 
         html{
             scroll-behavior: smooth;
@@ -248,6 +255,11 @@
             justify-content: center;
         }
 
+        .red-border{
+            border: 2px solid red;
+            padding: 10px;
+            border-radius: 10px;
+        }
 
 
 
@@ -306,7 +318,100 @@
             <strong>Instructions:</strong> Use block letters to complete this form where space is provided or place an ‘X’ in the correct square. <br>
             <strong>Incomplete applications will not be accepted.</strong> All certified documents will be filed - no copies will be returned to applicants.
         </p>
+        <div class="row u-margin-bottom" style="justify-content: space-between;">
+            <div class="red-border">
+               <strong>Documents to be submitted with Application Form</strong>
+                <ul class="requirements-list u-margin-top">
+                    <li>ID Document - certified copy or</li>
+                    <li>Passport - certified copy</li>
+                    <li>School Leaving Certificate - certified copy</li>
+                    <li>Application Fee</li>
+                    <li>Official Translation (Non-English Documents)</li>
+                    <li>NQA Evaluation Report (International Qualifications)</li>
+                    <li>School Results/ Rapport (Namibian Schools – Current Grade 12)</li>
+                </ul>
+            </div>  
+
+            <div style="width: 70%; font-size: medium;">
+                <div class="red-border">
+                    <strong class="normal-text u-margin-bottom">Application Dates and Fees (Non-refundable)</strong>
+                    <p class="u-margin-bottom u-margin-top">The following must be paid at the nearest Centre/Campus or into UNAM Bank Account</p>
+                    <p class="u-margin-bottom">(Please attach proof of payment to application form)</p>
+                    
+                    <ul style="width: 90%; margin-left: 10px;">
+                        <li>
+                            <div class="row" style="justify-content: space-between;">
+                                <p>Namibian Applicants</p>
+                                <strong>N$150</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row" style="justify-content: space-between;">
+                                <p>International Applicants</p>
+                                <strong>N$300</strong>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div style="background-color: red; padding: 5px 10px 8px 10px; color: white; border-radius: 10px; text-align: center;" class="u-margin-top smaller-text">
+                    <p><strong>Completed application forms can be submitted at UNAM Campuses or Regional Centres or mailed to:</strong></p>
+                    <p>The Office of the Registrar, University of Namibia, Private Bag 13301</p>
+                    <p>Windhoek, NAMIBIA</p>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%; height: 5px; background-color: rgb(158, 158, 158);" class="u-margin-bottom-big">
+
+        </div>
+
+<!-- section 1 -->
+        <section>
+            <div class="section-header">
+                <h3 class="red-text">SECTION 1: PROPOSED COURSE OF STUDY</h3>
+            </div>
+            <table>
+                <tr>
+                    <th><small>Course of study which you wish to enrol:<small></th>
+                        <th colspan="2"><small>Campus<small> <input type="text" class="input-text" style="width: 70%"></th>
+                            <th><small>Full-Time</small></th>
+                                <td>
+                                    <input type="radio" name="time">
+                                </td>
+                                <th><small>Part-Time<small></th>
+                                    <td>
+                                        <input type="radio" name="time">
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                        <th><small>First Choice:<small></th>
+                                            <td colspan="15">
+                                                <input type="text" class="input-text">
+                                            </td>
+                                            </tr>
+                                            <tr>
+                                            <th><small>Second Choice:<small></th>
+                                                <td>
+                                                    <input type="text" class="input-text">
+                                                </td>
+                                                <td >
+                                                    <input type="text" class="input-text">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="input-text">
+                                                </td> 
+                                                <td colspan="3">
+                                                    <input type="text" class="input-text">
+                                                </td>
+           </tr>
+        </table>
+           <small class="smaller-text">(Your second choice will be considered if your first choice application is unsuccessful.)</small>
+           
+        </section>
          
+
+
+
         <!-- section 2 -->
         <section>
             <div class="section-header">
