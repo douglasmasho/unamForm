@@ -1,0 +1,121 @@
+        <section>
+            <p>SECTION 7: FORMAL STATISTICAL INFORMATION</p>
+    
+            <table>
+                <tr>
+                    <th colspan="2"><b>Region of Origin (Namibian Students only)</b> <small>NB: Where you were born and grew up.</small></th>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <table>
+                            <tr>
+                                <td><small>Karas<small></td>
+                                    <td colspan="2">200<td>
+                                        <!-- <td> -->
+                                            <input type="radio">
+                                        <!-- </td> -->
+                            </tr>
+                            <tr>
+                                <td><small>Hardap<small></td>
+                                    <td colspan="2">201<td>
+                                        <!-- <td> -->
+                                            <input type="radio">
+                                        <!-- </td> -->
+                                        <tr>
+                                            <td><small>Khomas<small></td>
+                                                <td colspan="2">202
+                                                    <td>
+                                                    <!-- <td> -->
+                                                        <input type="radio">
+                                                    <!-- </td> -->
+                                                    <tr>
+                                                        <td><small>Erongo<small></td>
+                                                            <td colspan="2">203<td>
+                                                                <!-- <td> -->
+                                                                    <input type="radio">
+                                                                <!-- </td> -->
+                                                                <tr>
+                                                                    <td ><small>Omaheke<small></td>
+                                                                        <td colspan="2">204<td>
+                                                                            <!-- <td> -->
+                                                                                <input type="radio">
+                                                                            <!-- </td> -->
+                                                                            <tr>
+                                                                                <td><small>Otjozondjupa<small></td>
+                                                                                    <td>205<td>
+                                                                                        <td>
+                                                                                            <input type="radio">
+                                                                                        </td>
+                                                                                        <tr>
+                                                                                            <td><small>Kunene<small></td>
+                                                                                                <td>206<td>
+                                                                                                    <td>
+                                                                                                        <input type="radio">
+                                                                                                    </td>
+                                                                                        </tr>
+                                                                            </tr>
+                                                                </tr>
+                                                    </tr>
+                                        </tr>
+                            </tr>
+                    
+                        </table>
+                    </td>
+
+                    <td width="50%">
+                        <table>    
+                            <tr>
+                                <td><small>Omusati<small></td>
+                                        <td><p>207</p><td>
+                                            <td >
+                                                            <input type="radio">
+                                                      </td>
+                            </tr>
+                                        <tr>
+                                            <td><small>Oshana<small></td>
+                                                <td>208<td>
+                                                    <td>
+                                                        <input type="radio">
+                                                    </td>
+                                        </tr>
+                                        <tr>
+                                            <td><small>Ohangwena<small></td>
+                                                <td>209<td>
+                                                    <td>
+                                                        <input type="radio">
+                                                    </td>
+                                        </tr>
+                                        <tr>
+                                            <td><small>Oshikoto<small></td>
+                                                <td>210<td>
+                                                    <td>
+                                                        <input type="radio">
+                                                    </td>
+                                        </tr>
+                                        <tr>
+                                            <td><small>Kavango West<small></td>
+                                                <td>211<td>
+                                                    <td>
+                                                        <input type="radio">
+                                                    </td>
+                                        </tr>
+                                        <tr>
+                                            <td><small>Kavango East<small></td>
+                                                <td>213<td>
+                                                    <td>
+                                                        <input type="radio">
+                                                    </td>
+                                        </tr>
+                                        <tr>
+                                            <td><small>Zambezi<small></td>
+                                                <td>212<td>
+                                                    <td>
+                                                        <input type="radio">
+                                                    </td>
+                                        </tr>
+                            
+                        </table>
+                    </td>
+                </tr>      
+            </table>
+        </section>
