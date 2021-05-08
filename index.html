@@ -58,13 +58,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
         }
 
         /* utility classes */
+         .u-padding{
+             padding: 15px !important; 
+         }
 
         .u-margin-right{
-            margin-right: 5px;
+            margin-right: 5px !important;
         }
 
         .u-margin-bottom{
-            margin-bottom: 8px;
+            margin-bottom: 8px !important;
         }
 
         .u-margin-bottom-huge{
@@ -72,15 +75,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
         }
 
         .u-margin-bottom-big{
-            margin-bottom: 15px;
+            margin-bottom: 15px !important;
         }
 
+        .u-margin-bottom-bigger{
+            margin-bottom: 25px !important;
+        }
         .u-margin-top{
-            margin-top: 8px;
+            margin-top: 8px !important;
         }
 
         .u-margin-top-big{
-            margin-top: 25px;
+            margin-top: 25px !important;
         }
 
 
@@ -186,7 +192,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
         }
 
         .light-text{
-            font-weight: lighter;
+            font-weight: lighter !important;
         }
         .section-header{
             border: 2px red solid;
@@ -264,12 +270,25 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
         }
 
         .column {
-  flex: 50%;
-  padding: 5px;
-}
-  
+            flex: 50%;
+            padding: 5px;
+        }
 
+        .black-box{
+            border: black solid 3px;
+            height: 100px;
+            width: 60%;   
+        }
 
+        .center-vert--col{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+    }
+
+    .center-text{
+        text-align: center;
+    }
     </style>
 
 </head>
@@ -292,7 +311,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
                         </div>
                     </div>
                     <div class="outer-border">
-                        <div class="logodiv rect"><img src="./img/unamlogo.png" alt="" class="logo"></div>         
+                        <div class="logodiv rect"><img src="https://i.ibb.co/sgQKNtM/unamlogo.png" alt="" class="logo"></div>         
                     </div>
                 </div>
         </div>
@@ -415,9 +434,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
            <small class="smaller-text">(Your second choice will be considered if your first choice application is unsuccessful.)</small>
            
         </section>
-         
-
-
 
         <!-- section 2 -->
         <section>
@@ -1077,24 +1093,23 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
            <td><strong>ACCEPT FIRST CHOICE</strong></td>
            <!-- table data -->
            <td class="table-data">
-           <! -- select the input -->
-           <input type="radio" class="input-radio">
+           <input type="radio" class="input-radio" name="accept">
          </td>
            <td align="right"><strong>ACCEPT SECOND CHOICE</strong></td>
             <!-- table data -->
             <td class="table-data">
             <! -- select the input -->
-            <input type="radio" class="input-radio">
+            <input type="radio" class="input-radio" name="accept">
            <td align="right"><strong>RETURNED</strong></td>
             <!-- table data -->
             <td class="table-data">
             <! -- select the input -->
-            <input type="radio" class="input-radio">
+            <input type="radio" class="input-radio" name="returned/rejected">
            <td align="right"><strong>REJECTED</strong></td>
            <!-- table data -->
            <td class="table-data">
            <! -- select the input -->
-           <input type="radio" class="input-radio">
+           <input type="radio" class="input-radio" name="returned/rejected">
          </tr>
           
          <tr style="width:100%; color:red;">
@@ -1245,159 +1260,156 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
             </table>
         </section>
 
+        <!-- section 7 -->
         <section>
-    
-
       <div class="section-header">
           <h3 class="red-text">SECTION 7: FORMAL STATISTICAL INFORMATION </h3>
       </div>
-<table border= "1"  width= 100% height="20%" cellpadding= "4" cellspacing= "0">
-<th align="left"><strong>Region of Origin (Namibian Students only)</strong><small>NB: Where you were born and grew up.</small></th>
-</table>
-<div class="row">
-<div class="column">
-<table border= "1"  width= 100%  height="20%" cellpadding= "4" cellspacing= "0">
-<tr>
-<td>Karas</td>
-<td>200</td>
-<!-- table data -->
-<td class="table-data">
-<! -- Tick here  -->
-<input type="radio" class="input-radio" name="region">
-</td>
-</tr>
-<tr>
-       
-<td> Hardap</td>
-<td>201</td>
-<!-- table data -->
-<td class="table-data">
-<! -- Tick here  -->
-<input type="radio" class="input-radio" name="region">
-</td>
-</tr>
+                <table border= "1"  width= 100% height="20%" cellpadding= "4" cellspacing= "0">
+                <th align="left"><strong>Region of Origin (Namibian Students only)</strong><small>NB: Where you were born and grew up.</small></th>
+                </table>
+                <div class="row">
+                <div class="column">
+                <table border= "1"  width= 100%  height="20%" cellpadding= "4" cellspacing= "0">
+                <tr>
+                <td>Karas</td>
+                <td>200</td>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- Tick here  -->
+                <input type="radio" class="input-radio" name="region">
+                </td>
+                </tr>
+                <tr>
+                    
+                <td> Hardap</td>
+                <td>201</td>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- Tick here  -->
+                <input type="radio" class="input-radio" name="region">
+                </td>
+                </tr>
 
-<td>Khomas</td>
-<td>202</td>
-<!-- table data -->
-<td class="table-data">
-<! -- Tick here  -->
-<input type="radio" class="input-radio" name="region">
-</td>
-</tr>
+                <td>Khomas</td>
+                <td>202</td>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- Tick here  -->
+                <input type="radio" class="input-radio" name="region">
+                </td>
+                </tr>
 
-<td>Erongo</td>
-<td>203</td>
-<!-- table data -->
-<td class="table-data">
-<! -- Tick here  -->
-<input type="radio" class="input-radio" name="region">
-</td>
-</tr>
+                <td>Erongo</td>
+                <td>203</td>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- Tick here  -->
+                <input type="radio" class="input-radio" name="region">
+                </td>
+                </tr>
 
-<td>Omaheke</td>
-<td>204</td>
-<!-- table data -->
-<td class="table-data">
-<! -- Tick here  -->
-<input type="radio" class="input-radio" name="region">
-</td>
-</tr>
+                <td>Omaheke</td>
+                <td>204</td>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- Tick here  -->
+                <input type="radio" class="input-radio" name="region">
+                </td>
+                </tr>
 
-<td> Otjozondjupa</td>
-<td>205</td>
-<!-- table data -->
-<td class="table-data">
-<! -- Tick here  -->
-<input type="radio" class="input-radio" name="region">
-</td>
-</tr>
+                <td> Otjozondjupa</td>
+                <td>205</td>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- Tick here  -->
+                <input type="radio" class="input-radio" name="region">
+                </td>
+                </tr>
 
-<td> Kunene</td>
-<td>206</td>
-<!-- table data -->
-<td class="table-data">
-<! -- Tick here  -->
-<input type="radio" class="input-radio" name="region">
-</td>
-</tr>
+                <td> Kunene</td>
+                <td>206</td>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- Tick here  -->
+                <input type="radio" class="input-radio" name="region">
+                </td>
+                </tr>
 
-        
-</table>
-</div>
-<div class="column">
-<table border= "1"  width= 100%  height="20%" cellpadding= "4" cellspacing= "0">
-<tr>
-<td>Omusati</td>
-<td>207</td>
-<!-- table data -->
-<td class="table-data">
-<! -- Tick here  -->
-<input type="radio" class="input-radio" name="region">
-</td>
-</tr>
-<tr>
-       
-<td>Oshana</td>
-<td>208</td>
-<!-- table data -->
-<td class="table-data">
-<! -- Tick here  -->
-<input type="radio" class="input-radio" name="region">
-</td>
-</tr>
+                        
+                </table>
+                </div>
+                <div class="column">
+                <table border= "1"  width= 100%  height="20%" cellpadding= "4" cellspacing= "0">
+                <tr>
+                <td>Omusati</td>
+                <td>207</td>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- Tick here  -->
+                <input type="radio" class="input-radio" name="region">
+                </td>
+                </tr>
+                <tr>
+                    
+                <td>Oshana</td>
+                <td>208</td>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- Tick here  -->
+                <input type="radio" class="input-radio" name="region">
+                </td>
+                </tr>
 
-<td>Ohangwena</td>
-<td>209</td>
-<!-- table data -->
-<td class="table-data">
-<! -- Tick here  -->
-<input type="radio" class="input-radio" name="region">
-</td>
-</tr>
+                <td>Ohangwena</td>
+                <td>209</td>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- Tick here  -->
+                <input type="radio" class="input-radio" name="region">
+                </td>
+                </tr>
 
-<td> Oshikoto</td>
-<td>210</td>
-<!-- table data -->
-<td class="table-data">
-<! -- Tick here  -->
-<input type="radio" class="input-radio" name="region">
-</td>
-</tr>
+                <td> Oshikoto</td>
+                <td>210</td>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- Tick here  -->
+                <input type="radio" class="input-radio" name="region">
+                </td>
+                </tr>
 
-<td>Kavango West</td>
-<td>211</td>
-<!-- table data -->
-<td class="table-data">
-<! -- Tick here  -->
-<input type="radio" class="input-radio" name="region">
-</td>
-</tr>
+                <td>Kavango West</td>
+                <td>211</td>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- Tick here  -->
+                <input type="radio" class="input-radio" name="region">
+                </td>
+                </tr>
 
-<td>Kavango East</td>
-<td>213</td>
-<!-- table data -->
-<td class="table-data">
-<! -- Tick here  -->
-<input type="radio" class="input-radio" name="region">
-</td>
-</tr>
+                <td>Kavango East</td>
+                <td>213</td>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- Tick here  -->
+                <input type="radio" class="input-radio" name="region">
+                </td>
+                </tr>
 
-<td>Zambezi</td>
-<td>212</td>
-<!-- table data -->
-<td class="table-data">
-<! -- Tick here  -->
-<input type="radio" class="input-radio" name="region">
-</td>
-</tr>
+                <td>Zambezi</td>
+                <td>212</td>
+                <!-- table data -->
+                <td class="table-data">
+                <! -- Tick here  -->
+                <input type="radio" class="input-radio" name="region">
+                </td>
+                </tr>
 
-</table>
-</div>
-</div>
+                </table>
+                </div>
+                </div>
         </section>
-
-
         <!-- section 8 -->
         <section>
             <div class="section-header section-header-no-border">
@@ -1649,6 +1661,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
         </section>
 
 
+<!-- section 10 -->
         <section>
             <div class="section-header">
                 <h3 class="red-text">SECTION 10 ACHIEVEMENTS:</h3> 
@@ -1674,13 +1687,52 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
                     </tr>   
                 </table>
                 <br>
-                <div class="section-header">
-                    <h3 class="red-text">Decleration</h3>
+                
+        </section>
+
+
+        <!-- decleration -->
+        <section>
+            <div class="section-header">
+                <h3 class="red-text">Decleration</h3>
+            </div>
+            <br>
+            <p class="normal-text light-text">I hereby declare that all the particulars given in this application form are true and correct. I further declare that my enrolment as a student at the 
+                University of Namibia (UNAM) shall be subject to the terms and conditions contained in the agreement, which I shall complete, sign and submit 
+                at registration. </p>
+
+
+                <section style="display:flex; justify-content: space-between;"> 
+                    <table style="border: none; width: 45%">
+                        <tr style="border: none">
+                         <td class="table-data" style="border: none"><p class="normal-text">SIGNATURE OF APPLICANT</p></td>
+                         <td style="border: none"><input type="text" class="input-text"style="height: 100px; border: 5px solid black"></td>
+                        </tr>
+                         <br></br> 
+                        <tr style="border: none">
+                            <td class="table-data" style="border: none"><p class="normal-text">SIGNATURE OF GUARDIAN
+                                (If applicant is under 21 years of age)</p></td>
+                            <td style="border: none"><input type="text" class="input-text" style="height: 100px; border: 5px solid black" ></td>
+                            </tr>
+                    </table>
+                    <div style=" width: 45%; display:flex; justify-content: space-evenly; flex-direction: column">
+                        <div > <p class="normal-text" style="display: inline-block; margin-right: 20px">Date:</p><input type="date"></div>            
+                        <div > <p class="normal-text"  style="display: inline-block; margin-right: 20px">Date:</p><input type="date"></div>
+                    </div>
+                 </section>
+
+            <!-- <div class="row u-margin-top-big">
+                <div style="width: 60%; justify-content: space-between;" class="row" >
+                    <div class="center-vert--col">
+                   <p class="bigger-text" style="text-transform: uppercase;">Signature of applicant</p>
+
+                    </div>
+                   <div class="black-box">
+
+                   </div>
                 </div>
-                <br>
-                <p class="normal-text light-text">I hereby declare that all the particulars given in this application form are true and correct. I further declare that my enrolment as a student at the 
-                    University of Namibia (UNAM) shall be subject to the terms and conditions contained in the agreement, which I shall complete, sign and submit 
-                    at registration. </p>
+
+            </div> -->
         </section>
 
 
@@ -1701,6 +1753,50 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
                 </div>
             </div>
         </section>
+
+        <div style="padding-bottom: 15px; border-bottom: black 2px dotted;" class="u-margin-bottom-bigger">
+            <div class="section-header u-padding u-margin-bottom-big" style="border-radius: 10px;">
+                <h3 class="red-text center-text u-margin-bottom">FOR OFFICIAL USE ONLY</h3> 
+                <div class="row" style="justify-content: space-evenly;">
+                    <div>
+                        <p class="normal-text light-text">APPLICATION FEE RECEIVED:__________________ </p>
+                        <p class="normal-text light-text">RECEIPT NUMBER: _______________</p>
+                    </div>
+                    <div>
+                        <p class="normal-text light-text">LATE FEE RECEIVED: ________________</p>
+                        <p class="normal-text light-text">RECEIPT NUMBER: _________________</p>
+                    </div>
+                </div>
+             </div>  
+        </div>
+
+
+        <section>
+            <div class="section-header u-margin-bottom-big">
+               <h3 class="red-text" >APPLICATION FORM PROOF OF SUBMISSION</h3> 
+            </div>
+            <div class="row" style="justify-content: space-evenly;">
+                <div style="width: 50%; flex-direction: column; justify-content: space-between; justify-content: space-evenly;" class="row" >
+                    <p class="normal-text light-text">Full Name: ...........................................................................</p>
+                    <p class="normal-text light-text">Signature: .............................................................................</p>
+                    <p class="normal-text light-text">Will forward application form to which Faculty and Campus:</p>
+                    <p class="normal-text light-text"> ....................................................................................................</p>
+                </div>
+                <div style="width: 50%; justify-content: space-evenly; align-items: center;" class="row">
+                    <div class="date-stamp row" style="width: 50%; justify-content: center; align-items: center;" >
+                        <p style="color: gray" class="normal-text"><strong>OFFICIAL DATE STAMP</strong></p>
+                    </div>
+                    <a href="https://ibb.co/jfzMCFN"><img src="https://i.ibb.co/1QMqCxg/unamwhite.png" alt="unamwhite" border="0" width="100px"></a>
+                </div>
+              
+
+            </div>
+        </section>
+
+
+
+
+
 
 
     </form>
