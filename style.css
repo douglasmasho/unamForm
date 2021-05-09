@@ -13,6 +13,13 @@ padding: 0;
 box-sizing: inherit;
 }
 
+.requirements-list{
+    list-style: none;
+}
+
+.requirements-list li:not(:last-child){
+    margin-bottom: 10px;
+}
 
 html{
     scroll-behavior: smooth;
@@ -38,13 +45,16 @@ body{
 }
 
 /* utility classes */
+ .u-padding{
+     padding: 15px !important; 
+ }
 
 .u-margin-right{
-    margin-right: 5px;
+    margin-right: 5px !important;
 }
 
 .u-margin-bottom{
-    margin-bottom: 8px;
+    margin-bottom: 8px !important;
 }
 
 .u-margin-bottom-huge{
@@ -52,15 +62,18 @@ body{
 }
 
 .u-margin-bottom-big{
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
 }
 
+.u-margin-bottom-bigger{
+    margin-bottom: 25px !important;
+}
 .u-margin-top{
-    margin-top: 8px;
+    margin-top: 8px !important;
 }
 
 .u-margin-top-big{
-    margin-top: 25px;
+    margin-top: 25px !important;
 }
 
 
@@ -166,7 +179,7 @@ body{
 }
 
 .light-text{
-    font-weight: lighter;
+    font-weight: lighter !important;
 }
 .section-header{
     border: 2px red solid;
@@ -235,4 +248,31 @@ section{
 .center-hrz{
     display: flex;
     justify-content: center;
+}
+
+.red-border{
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.column {
+    flex: 50%;
+    padding: 5px;
+}
+
+.black-box{
+    border: black solid 3px;
+    height: 100px;
+    width: 60%;   
+}
+
+.center-vert--col{ 
+display: flex;
+flex-direction: column;
+justify-content: center;  
+}
+
+.center-text{
+text-align: center;
 }
